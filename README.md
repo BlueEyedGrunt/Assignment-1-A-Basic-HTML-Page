@@ -41,5 +41,4 @@ The project is deployed on GitHub Pages at:
 └── SUBMISSION.md
 ```
 
-## License
-MIT (or course default)
+
