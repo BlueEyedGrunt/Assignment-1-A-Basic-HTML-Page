@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Basic HTML Page</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --accent: #38bdf8;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, #1f2937 0%, var(--bg) 40%) fixed;
+      color: var(--text);
+      line-height: 1.6;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+    main {
+      width: 100%;
+      max-width: 720px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.25rem);
+      letter-spacing: 0.4px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 0.75rem 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .label {
+      color: var(--muted);
+    }
+    .value {
+      font-weight: 600;
+    }
+    .hello {
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      border: 1px dashed rgba(56,189,248,0.4);
+      border-radius: 12px;
+      background: rgba(56,189,248,0.08);
+    }
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    code { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>A Basic HTML Page</h1>
+    <p class="subtitle">Deployed with GitHub Pages</p>
+
+    <section aria-labelledby="info-heading">
+      <h2 id="info-heading" style="position: absolute; left: -9999px;">Student Information</h2>
+      <div class="grid">
+        <div class="label">First &amp; Last Name</div>
+        <div class="value">Brian O'Brien</div>
+
+        <div class="label">Course Name</div>
+        <div class="value">COP3363 — Introduction to Programming in C++ for Majors</div>
+
+        <div class="label">Major</div>
+        <div class="value">Computer Science</div>
+
+        <div class="label">SIS ID</div>
+        <div class="value">BSO23</div>
+      </div>
+
+      <div class="hello" role="note">
+        <strong>Message:</strong> Hello, World!
+      </div>
+    </section>
+
+    <footer>
+      This page is a single file: <code>index.html</code>. Host it at the repo root for GitHub Pages.
+    </footer>
+  </main>
+</body>
+</html>
